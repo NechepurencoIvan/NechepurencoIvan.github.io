@@ -1,1 +1,3 @@
-alert("Hello, world!")
+document.findElementById("but").attachEvent('click', function(){
+	alert("HW!")
+})
