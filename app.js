@@ -17,7 +17,7 @@
     button2.click(function() {
         point = $('<li>');
         list.append(point);
-        txt = $('<span>').text(document.getElementById("add_task_input").text);
+        txt = $('<span>').text(document.getElementById("add_task_input").value);
         point.append(txt);
         button1 = $('<button>');
         point.append(button1.text("Удалить"));
