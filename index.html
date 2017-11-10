@@ -1,39 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
+	  <meta  http-equiv="Content-Type" content="text/html; charset=cp1251"> 
 		<title>Резюме - Иван Нечепуренко</title>
-		<style>
-        *{
-			font-family: COMIC SANS MS
-        }
-    	div.about{
-        	color: red;
-        }
-        div.experience{
-        	color: green
-        }
-        div.contacts{
-        	color: blue
-        }
-    	</style>
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 	</head>
-	<body bgcolor = "white">
-<button id="but">Нажать</button>
-		<script>
-document.getElementById("but").addEventListener('click', function(){
-	alert("HW!");
-})	
-		</script>
-	<div class="about"><p>
-    		Это Иван Нечепуренко</p>
-	</div>
-	<div class="experience">
-    	Он учился в школе, а сейчас в институте
-	</div>
-    <div class="contacts">
-    	Его телеграм:
-        <p>
-        <a href="https://t.me/IvanNechepurenco"> https://t.me/IvanNechepurenco</a>
-        </p>
-    </div>
+<body>
+<div id = "root">
+</div>
+<label>Строк: 
+    <input type="text" id="numrows" value="4" />
+</label>
+<label>Стобцов: 
+    <input type="text" id="numcols" value="3" />
+</label>
+
+<div id="my-table"></div>
+
+<input type="button" value="Сделать таблицу" id="build-table">
+<script src="./app.js"></script>
+<body>
 </html>
